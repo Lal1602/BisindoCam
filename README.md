@@ -18,6 +18,23 @@
 
 ---
 
+## 📸 Preview
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/01-home.png" alt="Home — 3D hero" width="420"/><br/><sub><b>Home</b> · 3D interactive hero</sub></td>
+    <td align="center"><img src="docs/screenshots/02-translate.png" alt="Translate page" width="420"/><br/><sub><b>Translate</b> · Live letter & word recognition</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/03-dictionary.png" alt="Dictionary — 3D signs" width="420"/><br/><sub><b>Dictionary</b> · 3D animated sign browser</sub></td>
+    <td align="center"><img src="docs/screenshots/04-conversation.png" alt="Conversation mode" width="420"/><br/><sub><b>Conversation</b> · Two-way signer session</sub></td>
+  </tr>
+</table>
+</div>
+
+---
+
 ## ✨ What is Isyarat?
 
 Isyarat ("gesture" in Indonesian) is a **portfolio web application** that translates BISINDO — the hand-based sign language used by Indonesia's Deaf community — into text in real time. It uses your device's camera, processes every frame locally with MediaPipe and ONNX neural networks, and produces readable output with zero server round-trips.
