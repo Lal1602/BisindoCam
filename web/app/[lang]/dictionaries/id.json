@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "title": "Isyarat — Portofolio",
+    "description": "Penerjemah Bahasa Isyarat Indonesia (BISINDO) yang berjalan langsung di peramban: isyarat menjadi teks dan suara, tanpa video yang meninggalkan perangkat."
+  },
+  "a11y": {
+    "skip": "Lompat ke konten utama",
+    "primaryNav": "Navigasi utama",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "themeToLight": "Ganti ke mode terang",
+    "themeToDark": "Ganti ke mode gelap",
+    "language": "Bahasa",
+    "switchLanguage": "Baca dalam bahasa Inggris"
+  },
+  "nav": {
+    "home": "Beranda",
+    "translate": "Terjemah",
+    "conversation": "Percakapan",
+    "dictionary": "Kamus",
+    "learn": "Belajar",
+    "bisindo": "Tentang BISINDO",
+    "lab": "Lab",
+    "work": "Karya",
+    "about": "Tentang",
+    "contact": "Kontak"
+  },
+  "home": {
+    "eyebrow": "Penerjemah Bahasa Isyarat Indonesia",
+    "titleLines": [
+      "Tangan",
+      "yang",
+      "berbicara."
+    ],
+    "lede": "Isyarat BISINDO diterjemahkan menjadi teks dan suara, langsung di peramban Anda. Video tidak pernah meninggalkan perangkat.",
+    "ctaCamera": "Buka penerjemah",
+    "ctaDemo": "Jelajahi kamus",
+    "indexLabel": "Daftar isi",
+    "manifestoLabel": "Mengapa",
+    "manifesto": "Bahasa isyarat adalah bahasa yang utuh, dengan tata bahasa, rasa, dan logatnya sendiri. Proyek ini tidak menggantikan juru bahasa isyarat. Ia hanyalah jembatan kecil untuk percakapan sehari-hari, dibuat dengan hormat kepada teman Tuli.",
+    "chaptersLabel": "Ruang",
+    "chapters": [
+      {
+        "key": "translate",
+        "title": "Terjemah",
+        "body": "Isyarat menjadi subtitle dan suara, secara langsung."
+      },
+      {
+        "key": "conversation",
+        "title": "Percakapan",
+        "body": "Dua arah: isyarat menjadi teks, ucapan menjadi teks."
+      },
+      {
+        "key": "dictionary",
+        "title": "Kamus",
+        "body": "26 huruf dan 63 kata dasar, diperagakan tangan tiga dimensi."
+      },
+      {
+        "key": "learn",
+        "title": "Belajar",
+        "body": "Latihan dengan umpan balik langsung dari kamera."
+      }
+    ],
+    "privacy": "Diproses di perangkat Anda · Tanpa server · Tanpa rekaman",
+    "stats": [
+      {
+        "value": "26",
+        "label": "huruf statis"
+      },
+      {
+        "value": "63",
+        "label": "kata dinamis"
+      },
+      {
+        "value": "0",
+        "label": "byte video dikirim"
+      }
+    ]
+  },
+  "footer": {
+    "made": "Dirancang dan dibangun dengan tangan",
+    "attribution": "Data latih dari dataset BISINDO terbuka — atribusi lengkap di halaman Tentang BISINDO.",
+    "top": "Kembali ke atas"
+  },
+  "stage": {
+    "figure": "Gbr. 01 — Tangan, 21 titik",
+    "demoNote": "Animasi demo · bukan isyarat",
+    "liveNote": "Kamera aktif · di perangkat ini",
+    "startCamera": "Nyalakan kamera",
+    "stopCamera": "Matikan kamera",
+    "starting": "Menyiapkan kamera…",
+    "denied": "Izin kamera ditolak. Anda bisa mengizinkannya lewat ikon gembok di bilah alamat, lalu coba lagi.",
+    "unavailable": "Kamera tidak ditemukan atau tidak bisa dipakai di perangkat ini.",
+    "error": "Kamera gagal dimulai. Tutup aplikasi lain yang memakai kamera, lalu coba lagi.",
+    "subtitleDemo": "Nyalakan kamera, lalu angkat tangan Anda.",
+    "subtitleWaiting": "Angkat tangan ke depan kamera…",
+    "subtitleTracking": "Tangan terbaca. Terjemahan muncul di sini setelah model selesai dilatih.",
+    "privacy": "Video tidak direkam atau dikirim",
+    "subtitleSpell": "Eja sebuah kata dengan huruf BISINDO…"
+  },
+  "translate": {
+    "metaTitle": "Terjemah",
+    "eyebrow": "Ruang 01 — Terjemah",
+    "title": "Isyarat menjadi tulisan.",
+    "intro": "Nyalakan kamera, lalu eja dengan huruf BISINDO — atau pilih mode Kata untuk 63 isyarat kata dasar. Semua diproses di perangkat Anda.",
+    "modeLabel": "Mode",
+    "modeLetters": "Huruf",
+    "modeWords": "Kata",
+    "wordsSoon": "segera",
+    "transcript": "Transkrip",
+    "placeholder": "Tulisan akan muncul di sini.",
+    "space": "Spasi",
+    "backspace": "Hapus",
+    "clear": "Bersihkan",
+    "speak": "Bacakan",
+    "copy": "Salin",
+    "copied": "Tersalin",
+    "download": "Unduh .txt",
+    "autoSpeak": "Bacakan otomatis setiap kata",
+    "textSize": "Ukuran teks",
+    "sizes": [
+      "Kecil",
+      "Sedang",
+      "Besar"
+    ],
+    "modelMissing": "Model huruf sedang dilatih. Tangan Anda sudah terbaca, terjemahan akan aktif setelah model dipasang.",
+    "modelError": "Model gagal dimuat. Coba muat ulang halaman.",
+    "shortcuts": "Pintasan: Spasi untuk spasi, Backspace untuk menghapus, Esc untuk membersihkan.",
+    "tipsLabel": "Agar terbaca dengan baik",
+    "tips": [
+      "Cahaya dari depan, bukan dari belakang Anda.",
+      "Latar polos membantu, tetapi tidak wajib.",
+      "Seluruh tangan terlihat, sekitar setengah lengan dari kamera.",
+      "Tahan setiap huruf sampai garis di bawahnya penuh."
+    ],
+    "fileName": "transkrip-isyarat"
+  },
+  "bisindo": {
+    "metaTitle": "Tentang BISINDO",
+    "eyebrow": "Ruang 05 — Tentang BISINDO",
+    "title": "Bahasa yang lahir dari komunitasnya.",
+    "lede": "BISINDO, Bahasa Isyarat Indonesia, tumbuh secara alami di tengah komunitas Tuli. Ia punya tata bahasa, ekspresi, dan logat daerahnya sendiri — bukan sekadar bahasa Indonesia yang diterjemahkan ke tangan.",
+    "sections": [
+      {
+        "label": "Bahasa",
+        "title": "Lebih dari gerakan tangan",
+        "body": "Dalam BISINDO, makna dibawa oleh bentuk tangan, posisi, arah gerak, dan ekspresi wajah sekaligus. Alis yang terangkat bisa mengubah pernyataan menjadi pertanyaan. Karena itu, penerjemah otomatis — termasuk yang ada di situs ini — hanya menangkap sebagian kecil dari bahasa yang utuh."
+      },
+      {
+        "label": "Logat",
+        "title": "Satu bahasa, banyak logat",
+        "body": "Seperti bahasa lisan, BISINDO memiliki variasi daerah. Isyarat untuk satu kata di Jakarta bisa berbeda dengan di Yogyakarta atau Makassar. Data latih model ini berasal dari sejumlah kecil penutur, sehingga logat lain mungkin belum dikenali dengan baik."
+      },
+      {
+        "label": "Identitas",
+        "title": "Tuli, dengan T besar",
+        "body": "Banyak anggota komunitas memilih sebutan Tuli — dengan huruf T kapital — sebagai identitas budaya dan bahasa, bukan sebutan medis. Situs ini mengikuti pilihan tersebut."
+      }
+    ],
+    "compareLabel": "BISINDO dan SIBI",
+    "compareIntro": "Di Indonesia dikenal dua sistem isyarat. Keduanya sering tertukar.",
+    "compareHead": [
+      "",
+      "BISINDO",
+      "SIBI"
+    ],
+    "compareRows": [
+      [
+        "Asal",
+        "Tumbuh alami di komunitas Tuli",
+        "Disusun untuk pendidikan formal"
+      ],
+      [
+        "Tata bahasa",
+        "Tata bahasa visual sendiri",
+        "Mengikuti tata bahasa Indonesia, termasuk imbuhan"
+      ],
+      [
+        "Dipakai",
+        "Percakapan sehari-hari komunitas Tuli",
+        "Terutama di lingkungan sekolah"
+      ]
+    ],
+    "etiquetteLabel": "Berkomunikasi dengan teman Tuli",
+    "etiquette": [
+      "Hadapkan wajah Anda, jangan menutup mulut, dan bicaralah dengan wajar.",
+      "Tulis atau ketik bila perlu — itu sah dan sering paling cepat.",
+      "Pelajari isyarat dasar: halo, terima kasih, maaf, nama.",
+      "Untuk urusan penting (kesehatan, hukum, pekerjaan), gunakan Juru Bahasa Isyarat (JBI) profesional — bukan aplikasi.",
+      "Tanyakan cara berkomunikasi yang paling nyaman bagi lawan bicara Anda."
+    ],
+    "learnLabel": "Belajar lebih jauh",
+    "learnBody": "Cara terbaik belajar BISINDO adalah langsung dari penutur Tuli. Carilah kelas dari komunitas setempat, misalnya yang diselenggarakan oleh Pusat Bahasa Isyarat Indonesia (Pusbisindo) atau Gerakan untuk Kesejahteraan Tunarungu Indonesia (Gerkatin) di daerah Anda.",
+    "attributionLabel": "Data & atribusi",
+    "attributionIntro": "Model di situs ini dilatih dari dataset publik berikut. Terima kasih kepada para penyusun dan para penutur yang merekam isyaratnya.",
+    "attributionHead": [
+      "Dataset",
+      "Isi",
+      "Lisensi"
+    ],
+    "licenceNotStated": "tidak dicantumkan",
+    "attributionNote": "Situs ini non-komersial. Data tanpa lisensi tertulis dipakai dengan itikad baik dan atribusi penuh; bila pemilik keberatan, data akan dikeluarkan dan model dilatih ulang."
+  },
+  "dictionary": {
+    "metaTitle": "Kamus",
+    "eyebrow": "Ruang 03 — Kamus",
+    "title": "Kamus isyarat.",
+    "intro": "Setiap huruf dan kata diperagakan oleh tangan tiga dimensi dari contoh nyata dalam dataset. Seret untuk memutar dan melihat dari sisi lain.",
+    "search": "Cari huruf atau kata",
+    "tabLetters": "Huruf",
+    "tabWords": "Kata",
+    "wordsSoon": "segera",
+    "stageNote": "Contoh dari dataset · seret untuk memutar",
+    "letterLabel": "Huruf",
+    "empty": "Tidak ada yang cocok.",
+    "practice": "Latih huruf ini",
+    "loading": "Memuat contoh…",
+    "missing": "Contoh isyarat belum tersedia.",
+    "caveat": "Contoh diambil dari foto peraga sungguhan dan bisa sedikit berbeda dari logat di daerah Anda. Belajarlah juga langsung dari penutur Tuli."
+  },
+  "conversation": {
+    "metaTitle": "Percakapan",
+    "eyebrow": "Ruang 02 — Percakapan",
+    "title": "Dua arah, satu layar.",
+    "intro": "Untuk ngobrol langsung antara teman Tuli dan teman dengar. Isyarat atau ketikan menjadi tulisan dan suara; ucapan menjadi tulisan besar yang mudah dibaca.",
+    "signerTitle": "Teman Tuli",
+    "signerHint": "Berisyarat (eja huruf) atau ketik, lalu kirim.",
+    "speakerTitle": "Teman dengar",
+    "speakerHint": "Tekan tombol mikrofon lalu bicara dengan wajar.",
+    "typePlaceholder": "Ketik pesan…",
+    "send": "Kirim",
+    "sendAndSpeak": "Kirim & bacakan",
+    "listen": "Mulai mendengarkan",
+    "stopListening": "Berhenti",
+    "listening": "Mendengarkan…",
+    "micDenied": "Izin mikrofon ditolak. Izinkan lewat ikon gembok di bilah alamat.",
+    "micError": "Pengenalan suara terputus. Coba lagi.",
+    "micUnsupported": "Peramban ini belum mendukung pengenalan suara. Coba Chrome atau Edge, atau ketik saja.",
+    "speechLang": "Bahasa ucapan",
+    "faceToFace": "Mode berhadapan",
+    "faceToFaceHint": "Putar panel teman dengar agar ponsel bisa diletakkan di antara kalian.",
+    "log": "Riwayat percakapan",
+    "logEmpty": "Belum ada pesan.",
+    "clearLog": "Hapus riwayat",
+    "downloadLog": "Unduh riwayat",
+    "fileName": "percakapan-isyarat",
+    "you": "Teman Tuli",
+    "them": "Teman dengar",
+    "privacy": "Kamera diproses di perangkat ini. Pengenalan suara memakai layanan bawaan peramban — di Chrome, audio dikirim ke server Google untuk diubah menjadi teks."
+  },
+  "learn": {
+    "metaTitle": "Belajar",
+    "eyebrow": "Ruang 04 — Belajar",
+    "title": "Belajar dengan cermin.",
+    "intro": "Lihat contohnya, peragakan di depan kamera, dan dapatkan umpan balik langsung. Mulai dari satu huruf, lalu eja namamu sendiri.",
+    "modeLetters": "Latihan huruf",
+    "modeName": "Eja namamu",
+    "target": "Peragakan",
+    "reference": "Contoh",
+    "you": "Anda",
+    "holdHint": "Tahan bentuk tangan sampai lingkaran penuh.",
+    "correct": "Tepat!",
+    "next": "Huruf berikutnya",
+    "skip": "Lewati",
+    "namePlaceholder": "Tulis namamu",
+    "nameStart": "Mulai mengeja",
+    "nameDone": "Selesai — kamu mengeja",
+    "again": "Ulangi",
+    "progress": "Huruf yang sudah dikuasai",
+    "reset": "Atur ulang progres",
+    "modelNotReady": "Model huruf belum siap, jadi penilaian otomatis belum aktif. Anda tetap bisa berlatih dengan contoh.",
+    "cameraFirst": "Nyalakan kamera untuk mulai berlatih.",
+    "confidence": "keyakinan"
+  },
+  "lab": {
+    "metaTitle": "Lab",
+    "eyebrow": "Ruang 06 — Lab",
+    "title": "Cara kerjanya.",
+    "lede": "Studi kasus di balik penerjemah ini: dari cahaya yang masuk ke kamera sampai huruf atau kata yang muncul di layar — semuanya terjadi di perangkat Anda.",
+    "pipelineLabel": "Alur",
+    "pipeline": [
+      {
+        "title": "Kamera",
+        "body": "Video dibaca langsung di peramban. Tidak ada satu frame pun yang dikirim atau disimpan."
+      },
+      {
+        "title": "Titik tangan",
+        "body": "MediaPipe menemukan 21 titik pada setiap tangan — dua tangan sekaligus, karena banyak isyarat BISINDO memakai keduanya."
+      },
+      {
+        "title": "Fitur",
+        "body": "Titik-titik diubah menjadi 131 angka: posisi relatif terhadap pergelangan, diskalakan dengan ukuran telapak. Tidak bergantung pada warna kulit, latar, atau jarak ke kamera."
+      },
+      {
+        "title": "Model",
+        "body": "Jaringan saraf kecil (ONNX) menebak huruf dari angka-angka itu dalam waktu kurang dari satu milidetik."
+      },
+      {
+        "title": "Penstabil",
+        "body": "Tebakan dihaluskan antarframe; huruf baru dikunci setelah ditahan sekitar setengah detik, agar subtitle tidak berkedip."
+      },
+      {
+        "title": "Tulisan & suara",
+        "body": "Huruf menjadi kata, kata bisa dibacakan, disalin, atau diunduh."
+      }
+    ],
+    "resultsLabel": "Hasil uji",
+    "resultsIntro": "Model diuji dengan cara yang ketat: setiap kali, satu dataset utuh disisihkan — orang, kamera, dan ruangan yang tidak pernah dilihat saat latihan — lalu model menebak huruf dari dataset itu.",
+    "meanLabel": "rata-rata akurasi pada data yang belum pernah dilihat",
+    "samplesLabel": "contoh latih",
+    "sizeLabel": "ukuran model",
+    "bySourceLabel": "Per dataset yang disisihkan",
+    "perLetterLabel": "Akurasi per huruf",
+    "perLetterNote": "Dihitung dari semua contoh uji, yang sebagian besar berasal dari dataset landmark. Huruf dengan bentuk mirip atau yang melibatkan gerakan paling sering tertukar.",
+    "sourceNames": {
+      "alfabet-bisindo": "Foto huruf (Kaggle, achmadnoer)",
+      "bisindo-yunita": "Foto huruf (Kaggle, yunitayupratiwi)",
+      "bisindo-landmarks-surya": "Landmark huruf (Kaggle, suryaadji)"
+    },
+    "wordsLabel": "Model kata",
+    "wordsPending": "Hasil model kata belum tersedia.",
+    "limitsLabel": "Keterbatasan",
+    "limits": [
+      "Kosakata kata masih terbatas pada 63 isyarat dasar; kalimat utuh belum diterjemahkan.",
+      "Isyarat yang bergerak, ekspresi wajah, dan tata bahasa BISINDO belum tertangkap.",
+      "Cahaya redup, tangan yang terpotong bingkai, atau sudut ekstrem menurunkan akurasi.",
+      "Data latih berasal dari sedikit penutur; logat daerah lain bisa kurang dikenali.",
+      "Ini alat bantu sehari-hari — bukan pengganti Juru Bahasa Isyarat."
+    ],
+    "privacyLabel": "Privasi",
+    "privacy": "Semua pemrosesan kamera terjadi di peramban Anda. Model dan pustaka diunduh sekali dari situs ini, lalu bekerja tanpa server. Tidak ada analitik, cookie pelacak, atau rekaman.",
+    "stackLabel": "Dibangun dengan",
+    "stack": [
+      "Next.js & React",
+      "TypeScript",
+      "Three.js · React Three Fiber",
+      "MediaPipe Tasks Vision",
+      "ONNX Runtime Web",
+      "Python · scikit-learn · PyTorch",
+      "Tailwind CSS"
+    ],
+    "tooltip": "benar",
+    "wordsIntro": "Model kata diuji per peraga: setiap lipatan menyisihkan satu peraga dari tiap dataset, sehingga kata selalu ditebak dari orang yang belum pernah dilihat model.",
+    "wordsMeanLabel": "rata-rata akurasi kata pada peraga baru",
+    "wordsTop3Label": "jawaban benar di 3 tebakan teratas",
+    "wordsCountLabel": "kata",
+    "wordsClipsLabel": "klip video",
+    "foldsLabel": "Per lipatan (peraga yang disisihkan)",
+    "perWordLabel": "Akurasi per kata",
+    "perWordNote": "Kata dengan gerakan mirip — misalnya salam yang hanya berbeda di bagian akhir — paling sering tertukar."
+  },
+  "work": {
+    "metaTitle": "Karya",
+    "eyebrow": "Ruang 07 — Karya",
+    "title": "Karya terpilih.",
+    "intro": "Proyek yang saya rancang dan bangun. Daftar ini akan bertambah.",
+    "view": "Lihat",
+    "more": "Proyek lain sedang ditulis."
+  },
+  "about": {
+    "metaTitle": "Tentang",
+    "eyebrow": "Ruang 08 — Tentang & Kontak",
+    "roleLabel": "Peran",
+    "bioLabel": "Tentang saya",
+    "contactLabel": "Kontak",
+    "contactIntro": "Ingin berdiskusi, berkolaborasi, atau memberi masukan — terutama dari teman Tuli? Saya senang mendengarnya.",
+    "emailLabel": "Surel",
+    "linksLabel": "Tautan",
+    "contactPending": "Detail kontak akan segera ditambahkan.",
+    "feedbackLabel": "Masukan untuk Isyarat",
+    "feedback": "Menemukan isyarat yang salah dikenali, atau logat daerah yang belum tercakup? Masukan dari penutur BISINDO sangat berarti untuk memperbaiki model."
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Halaman ini tidak ada.",
+    "body": "Mungkin tautannya keliru, atau halamannya sudah dipindahkan.",
+    "back": "Kembali ke beranda"
+  }
+}

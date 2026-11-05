@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+/* `dark:` follows the data-theme attribute that the inline head script sets. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* ── Palette: "Kertas, Tanah, Cahaya Pagi" ─────────────────────────────
+   Light is the default; dark applies when chosen, or when the system asks
+   for it and no explicit choice has been saved. */
+:root {
+  --paper: #f3eee4;
+  --paper-raised: #ebe4d7;
+  --ink: #1e1b16;
+  --ink-muted: #5c5549;
+  --moss: #3f4f38;
+  --clay: #9c5233;
+  --brass: #b08d57;
+  --line: rgb(30 27 22 / 0.14);
+  --data: #6a8a3e;
+  --grain-opacity: 0.07;
+  --grain-blend: multiply;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14120f;
+    --paper-raised: #1d1a16;
+    --ink: #ede6d8;
+    --ink-muted: #a69e8f;
+    --moss: #8fa382;
+    --clay: #c9825f;
+    --brass: #9c8156;
+    --line: rgb(237 230 216 / 0.14);
+    --data: #7aa055;
+    --grain-opacity: 0.05;
+    --grain-blend: screen;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #14120f;
+  --paper-raised: #1d1a16;
+  --ink: #ede6d8;
+  --ink-muted: #a69e8f;
+  --moss: #8fa382;
+  --clay: #c9825f;
+  --brass: #9c8156;
+  --line: rgb(237 230 216 / 0.14);
+  --data: #7aa055;
+  --grain-opacity: 0.05;
+  --grain-blend: screen;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-moss: var(--moss);
+  --color-clay: var(--clay);
+  --color-brass: var(--brass);
+  --color-line: var(--line);
+  --color-data: var(--data);
+
+  --font-display: var(--font-fraunces), "Times New Roman", serif;
+  --font-sans: var(--font-hanken), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  /* Fluid type scale — display sizes are deliberately oversized. */
+  --text-label: 0.75rem;
+  --text-body: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --text-lede: clamp(1.25rem, 1.1rem + 0.7vw, 1.75rem);
+  --text-title: clamp(2.25rem, 1.6rem + 3vw, 4.5rem);
+  --text-giant: clamp(4.5rem, 1.5rem + 15vw, 17rem);
+
+  --ease-quiet: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    background: var(--paper);
+    color: var(--ink);
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: 1.6;
+    transition: background-color 400ms var(--ease-quiet), color 400ms var(--ease-quiet);
+  }
+
+  /* Paper grain: a fixed, non-interactive noise layer over everything. */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+    opacity: var(--grain-opacity);
+    mix-blend-mode: var(--grain-blend);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.45 0 0 0 0 0.4 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  ::selection {
+    background: var(--clay);
+    color: var(--paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--moss);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+}
+
+@layer components {
+  /* Display serif with Fraunces' soft, slightly wonky optical forms. */
+  .font-display {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    font-variation-settings: "SOFT" 100, "WONK" 1;
+    letter-spacing: -0.02em;
+    line-height: 0.92;
+  }
+
+  .label {
+    font-family: var(--font-mono);
+    font-size: var(--text-label);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+
+  .hairline {
+    border-color: var(--line);
+  }
+
+  .link-quiet {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 500ms var(--ease-quiet);
+  }
+  .link-quiet:hover,
+  .link-quiet:focus-visible,
+  .link-quiet[aria-current="page"] {
+    background-size: 100% 1px;
+  }
+
+  .page-gutter {
+    padding-inline: clamp(1rem, 4vw, 3.5rem);
+  }
+
+  /* Entrance: set --i on siblings to stagger them. */
+  .rise {
+    animation: rise 1.4s var(--ease-quiet) both;
+    animation-delay: calc(var(--i, 0) * 110ms + 80ms);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.35em);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

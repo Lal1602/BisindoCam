@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "title": "Isyarat — Portfolio",
+    "description": "An Indonesian Sign Language (BISINDO) translator that runs entirely in the browser: signs become text and speech, and no video ever leaves the device."
+  },
+  "a11y": {
+    "skip": "Skip to main content",
+    "primaryNav": "Primary navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "themeToLight": "Switch to light mode",
+    "themeToDark": "Switch to dark mode",
+    "language": "Language",
+    "switchLanguage": "Read in Indonesian"
+  },
+  "nav": {
+    "home": "Home",
+    "translate": "Translate",
+    "conversation": "Conversation",
+    "dictionary": "Dictionary",
+    "learn": "Learn",
+    "bisindo": "About BISINDO",
+    "lab": "Lab",
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "eyebrow": "Indonesian Sign Language Translator",
+    "titleLines": [
+      "Hands",
+      "that",
+      "speak."
+    ],
+    "lede": "BISINDO signs become text and speech, right in your browser. Your video never leaves the device.",
+    "ctaCamera": "Open the translator",
+    "ctaDemo": "Explore the dictionary",
+    "indexLabel": "Contents",
+    "manifestoLabel": "Why",
+    "manifesto": "Sign language is a complete language, with its own grammar, feeling and accents. This project does not replace sign language interpreters. It is a small bridge for everyday conversation, made with respect for the Deaf community.",
+    "chaptersLabel": "Rooms",
+    "chapters": [
+      {
+        "key": "translate",
+        "title": "Translate",
+        "body": "Signs become live subtitles and speech."
+      },
+      {
+        "key": "conversation",
+        "title": "Conversation",
+        "body": "Both ways: signs to text, speech to text."
+      },
+      {
+        "key": "dictionary",
+        "title": "Dictionary",
+        "body": "26 letters and 63 basic words, performed by a 3D hand."
+      },
+      {
+        "key": "learn",
+        "title": "Learn",
+        "body": "Practice with instant feedback from your camera."
+      }
+    ],
+    "privacy": "Processed on your device · No server · No recording",
+    "stats": [
+      {
+        "value": "26",
+        "label": "static letters"
+      },
+      {
+        "value": "63",
+        "label": "dynamic words"
+      },
+      {
+        "value": "0",
+        "label": "bytes of video sent"
+      }
+    ]
+  },
+  "footer": {
+    "made": "Designed and built by hand",
+    "attribution": "Trained on open BISINDO datasets — full attribution on the About BISINDO page.",
+    "top": "Back to top"
+  },
+  "stage": {
+    "figure": "Fig. 01 — Hand, 21 points",
+    "demoNote": "Demo animation · not a sign",
+    "liveNote": "Camera on · on this device",
+    "startCamera": "Turn on camera",
+    "stopCamera": "Turn off camera",
+    "starting": "Preparing camera…",
+    "denied": "Camera permission was denied. You can allow it from the lock icon in the address bar, then try again.",
+    "unavailable": "No camera was found, or it cannot be used on this device.",
+    "error": "The camera failed to start. Close other apps using it, then try again.",
+    "subtitleDemo": "Turn on your camera, then raise your hand.",
+    "subtitleWaiting": "Raise your hand in front of the camera…",
+    "subtitleTracking": "Hand detected. Translations appear here once the model is trained.",
+    "privacy": "Video is never recorded or sent",
+    "subtitleSpell": "Fingerspell a word in BISINDO letters…"
+  },
+  "translate": {
+    "metaTitle": "Translate",
+    "eyebrow": "Room 01 — Translate",
+    "title": "Signs become writing.",
+    "intro": "Turn on your camera, then fingerspell in BISINDO letters — or switch to Words for 63 basic word signs. Everything is processed on your device.",
+    "modeLabel": "Mode",
+    "modeLetters": "Letters",
+    "modeWords": "Words",
+    "wordsSoon": "soon",
+    "transcript": "Transcript",
+    "placeholder": "Writing will appear here.",
+    "space": "Space",
+    "backspace": "Delete",
+    "clear": "Clear",
+    "speak": "Read aloud",
+    "copy": "Copy",
+    "copied": "Copied",
+    "download": "Download .txt",
+    "autoSpeak": "Read each word aloud automatically",
+    "textSize": "Text size",
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "modelMissing": "The letter model is still being trained. Your hands are already tracked; translation switches on once the model is installed.",
+    "modelError": "The model failed to load. Try reloading the page.",
+    "shortcuts": "Shortcuts: Space for a space, Backspace to delete, Esc to clear.",
+    "tipsLabel": "For a clear reading",
+    "tips": [
+      "Light from the front, not behind you.",
+      "A plain background helps but is not required.",
+      "Your whole hand in view, about half an arm from the camera.",
+      "Hold each letter until the line beneath it fills."
+    ],
+    "fileName": "sign-transcript"
+  },
+  "bisindo": {
+    "metaTitle": "About BISINDO",
+    "eyebrow": "Room 05 — About BISINDO",
+    "title": "A language born from its community.",
+    "lede": "BISINDO, Indonesian Sign Language, grew naturally within the Deaf community. It has its own grammar, expressions and regional accents — it is not Indonesian translated onto the hands.",
+    "sections": [
+      {
+        "label": "Language",
+        "title": "More than hand movements",
+        "body": "In BISINDO, meaning is carried by handshape, location, movement and facial expression all at once. Raised eyebrows can turn a statement into a question. That is why automatic translators — including the one on this site — capture only a small part of the full language."
+      },
+      {
+        "label": "Accents",
+        "title": "One language, many accents",
+        "body": "Like spoken languages, BISINDO varies by region. The sign for a word in Jakarta can differ from Yogyakarta or Makassar. This model was trained on a small number of signers, so other accents may not be recognised well yet."
+      },
+      {
+        "label": "Identity",
+        "title": "Deaf, with a capital D",
+        "body": "Many in the community choose the word Tuli (Deaf) — capitalised — as a cultural and linguistic identity rather than a medical label. This site follows that choice."
+      }
+    ],
+    "compareLabel": "BISINDO and SIBI",
+    "compareIntro": "Two signing systems are used in Indonesia, and they are often confused.",
+    "compareHead": [
+      "",
+      "BISINDO",
+      "SIBI"
+    ],
+    "compareRows": [
+      [
+        "Origin",
+        "Grew naturally in the Deaf community",
+        "Designed for formal education"
+      ],
+      [
+        "Grammar",
+        "Its own visual grammar",
+        "Follows Indonesian grammar, including affixes"
+      ],
+      [
+        "Used for",
+        "Everyday conversation in the Deaf community",
+        "Mainly in schools"
+      ]
+    ],
+    "etiquetteLabel": "Talking with Deaf people",
+    "etiquette": [
+      "Face the person, keep your mouth uncovered, and speak naturally.",
+      "Write or type when needed — it is perfectly fine and often fastest.",
+      "Learn a few basic signs: hello, thank you, sorry, name.",
+      "For anything important (health, legal, work), use a professional sign language interpreter — not an app.",
+      "Ask how the person prefers to communicate."
+    ],
+    "learnLabel": "Learn more",
+    "learnBody": "The best way to learn BISINDO is from Deaf signers themselves. Look for classes run by local communities, such as those organised by Pusbisindo (Indonesian Sign Language Centre) or Gerkatin chapters in your area.",
+    "attributionLabel": "Data & attribution",
+    "attributionIntro": "The models on this site were trained on the public datasets below. Thank you to their authors and to the signers who recorded them.",
+    "attributionHead": [
+      "Dataset",
+      "Contents",
+      "Licence"
+    ],
+    "licenceNotStated": "not stated",
+    "attributionNote": "This site is non-commercial. Data without a written licence is used in good faith with full attribution; if an owner objects, it will be removed and the models retrained."
+  },
+  "dictionary": {
+    "metaTitle": "Dictionary",
+    "eyebrow": "Room 03 — Dictionary",
+    "title": "A dictionary of signs.",
+    "intro": "Each letter and word is performed by a three-dimensional hand, taken from a real example in the dataset. Drag to turn it and see it from another side.",
+    "search": "Search a letter or word",
+    "tabLetters": "Letters",
+    "tabWords": "Words",
+    "wordsSoon": "soon",
+    "stageNote": "Example from the dataset · drag to turn",
+    "letterLabel": "Letter",
+    "empty": "Nothing matches.",
+    "practice": "Practise this letter",
+    "loading": "Loading examples…",
+    "missing": "Sign examples are not available yet.",
+    "caveat": "Examples come from photos of real signers and may differ slightly from the accent in your region. Learn from Deaf signers too."
+  },
+  "conversation": {
+    "metaTitle": "Conversation",
+    "eyebrow": "Room 02 — Conversation",
+    "title": "Both ways, one screen.",
+    "intro": "For talking face to face between Deaf and hearing friends. Signs or typing become text and speech; speech becomes large, easy-to-read text.",
+    "signerTitle": "Deaf friend",
+    "signerHint": "Sign (fingerspell) or type, then send.",
+    "speakerTitle": "Hearing friend",
+    "speakerHint": "Press the microphone and speak naturally.",
+    "typePlaceholder": "Type a message…",
+    "send": "Send",
+    "sendAndSpeak": "Send & read aloud",
+    "listen": "Start listening",
+    "stopListening": "Stop",
+    "listening": "Listening…",
+    "micDenied": "Microphone permission was denied. Allow it from the lock icon in the address bar.",
+    "micError": "Speech recognition was interrupted. Try again.",
+    "micUnsupported": "This browser does not support speech recognition yet. Try Chrome or Edge, or just type.",
+    "speechLang": "Spoken language",
+    "faceToFace": "Face-to-face mode",
+    "faceToFaceHint": "Turn the hearing friend's panel so the phone can lie between you.",
+    "log": "Conversation",
+    "logEmpty": "No messages yet.",
+    "clearLog": "Clear history",
+    "downloadLog": "Download history",
+    "fileName": "sign-conversation",
+    "you": "Deaf friend",
+    "them": "Hearing friend",
+    "privacy": "The camera is processed on this device. Speech recognition uses the browser's built-in service — in Chrome, audio is sent to Google's servers to be turned into text."
+  },
+  "learn": {
+    "metaTitle": "Learn",
+    "eyebrow": "Room 04 — Learn",
+    "title": "Learn with a mirror.",
+    "intro": "See the example, sign it in front of the camera, and get instant feedback. Start with one letter, then spell your own name.",
+    "modeLetters": "Letter practice",
+    "modeName": "Spell your name",
+    "target": "Sign",
+    "reference": "Example",
+    "you": "You",
+    "holdHint": "Hold the handshape until the circle fills.",
+    "correct": "That's it!",
+    "next": "Next letter",
+    "skip": "Skip",
+    "namePlaceholder": "Type your name",
+    "nameStart": "Start spelling",
+    "nameDone": "Done — you spelled",
+    "again": "Again",
+    "progress": "Letters mastered",
+    "reset": "Reset progress",
+    "modelNotReady": "The letter model isn't ready yet, so automatic scoring is off. You can still practise with the examples.",
+    "cameraFirst": "Turn on your camera to start practising.",
+    "confidence": "confidence"
+  },
+  "lab": {
+    "metaTitle": "Lab",
+    "eyebrow": "Room 06 — Lab",
+    "title": "How it works.",
+    "lede": "The case study behind this translator: from light entering the camera to a letter or word on the screen — all on your device.",
+    "pipelineLabel": "Pipeline",
+    "pipeline": [
+      {
+        "title": "Camera",
+        "body": "Video is read directly in the browser. Not a single frame is sent or stored."
+      },
+      {
+        "title": "Hand points",
+        "body": "MediaPipe finds 21 points on each hand — both hands at once, since many BISINDO signs use two."
+      },
+      {
+        "title": "Features",
+        "body": "The points become 131 numbers: positions relative to the wrist, scaled by palm size. Independent of skin tone, background or distance to the camera."
+      },
+      {
+        "title": "Model",
+        "body": "A small neural network (ONNX) guesses the letter from those numbers in under a millisecond."
+      },
+      {
+        "title": "Stabiliser",
+        "body": "Guesses are smoothed across frames; a letter is committed after being held for about half a second, so subtitles don't flicker."
+      },
+      {
+        "title": "Text & speech",
+        "body": "Letters become words, which can be read aloud, copied or downloaded."
+      }
+    ],
+    "resultsLabel": "Results",
+    "resultsIntro": "The model is tested strictly: each time, one whole dataset is held out — people, cameras and rooms never seen in training — and the model guesses the letters in it.",
+    "meanLabel": "mean accuracy on unseen data",
+    "samplesLabel": "training examples",
+    "sizeLabel": "model size",
+    "bySourceLabel": "By held-out dataset",
+    "perLetterLabel": "Accuracy per letter",
+    "perLetterNote": "Computed over all test examples, most of which come from the landmark dataset. Letters with similar shapes, or that involve movement, are confused most often.",
+    "sourceNames": {
+      "alfabet-bisindo": "Letter photos (Kaggle, achmadnoer)",
+      "bisindo-yunita": "Letter photos (Kaggle, yunitayupratiwi)",
+      "bisindo-landmarks-surya": "Letter landmarks (Kaggle, suryaadji)"
+    },
+    "wordsLabel": "Word model",
+    "wordsPending": "Word model results are not available yet.",
+    "limitsLabel": "Limitations",
+    "limits": [
+      "The word vocabulary is limited to 63 basic signs; full sentences are not translated yet.",
+      "Moving signs, facial expression and BISINDO grammar are not captured yet.",
+      "Dim light, hands cut off by the frame, or extreme angles reduce accuracy.",
+      "Training data comes from few signers; other regional accents may be recognised less well.",
+      "It is an everyday aid — not a replacement for a sign language interpreter."
+    ],
+    "privacyLabel": "Privacy",
+    "privacy": "All camera processing happens in your browser. Models and libraries are downloaded once from this site, then work without a server. No analytics, tracking cookies or recordings.",
+    "stackLabel": "Built with",
+    "stack": [
+      "Next.js & React",
+      "TypeScript",
+      "Three.js · React Three Fiber",
+      "MediaPipe Tasks Vision",
+      "ONNX Runtime Web",
+      "Python · scikit-learn · PyTorch",
+      "Tailwind CSS"
+    ],
+    "tooltip": "correct",
+    "wordsIntro": "The word model is tested per signer: each fold holds out one signer from every dataset, so words are always guessed from people the model has never seen.",
+    "wordsMeanLabel": "mean word accuracy on new signers",
+    "wordsTop3Label": "right answer within the top 3 guesses",
+    "wordsCountLabel": "words",
+    "wordsClipsLabel": "video clips",
+    "foldsLabel": "By fold (held-out signers)",
+    "perWordLabel": "Accuracy per word",
+    "perWordNote": "Words with similar movement — such as greetings that differ only at the end — are confused most often."
+  },
+  "work": {
+    "metaTitle": "Work",
+    "eyebrow": "Room 07 — Work",
+    "title": "Selected work.",
+    "intro": "Projects I have designed and built. This list will grow.",
+    "view": "View",
+    "more": "More projects are being written up."
+  },
+  "about": {
+    "metaTitle": "About",
+    "eyebrow": "Room 08 — About & Contact",
+    "roleLabel": "Role",
+    "bioLabel": "About me",
+    "contactLabel": "Contact",
+    "contactIntro": "Want to talk, collaborate or share feedback — especially from Deaf friends? I would love to hear from you.",
+    "emailLabel": "Email",
+    "linksLabel": "Links",
+    "contactPending": "Contact details will be added soon.",
+    "feedbackLabel": "Feedback for Isyarat",
+    "feedback": "Found a sign that is recognised wrongly, or a regional accent that is not covered yet? Feedback from BISINDO signers means a lot for improving the model."
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "This page does not exist.",
+    "body": "The link may be wrong, or the page has moved.",
+    "back": "Back to home"
+  }
+}

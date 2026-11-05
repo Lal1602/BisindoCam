@@ -1,0 +1,35 @@
+[project]
+name = "isyarat-ml"
+version = "0.1.0"
+description = "BISINDO letter and word recognition: landmark extraction, training and ONNX export"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "kaggle",
+  "mediapipe",
+  "numpy",
+  "opencv-python",
+  "onnx",
+  "onnxruntime",
+  "scikit-learn",
+  "tqdm",
+  "matplotlib",
+  "skl2onnx>=1.20.0",
+  "torch>=2.14.1",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+# CPU-only PyTorch (the word model is small; no CUDA download needed).
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }

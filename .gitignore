@@ -1,0 +1,17 @@
+# Python / ML
+ml/.venv/
+ml/data/
+ml/runs/
+__pycache__/
+*.pyc
+
+# Secrets
+kaggle.json
+.env*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# ML run logs
+ml/logs/
