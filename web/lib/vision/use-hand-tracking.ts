@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { HandFrame } from "./hand";
+import { HandGhostBuffer } from "./hand-ghost";
 import { createHandTracker, type HandTracker } from "./tracker";
 
 export type CameraStatus = "off" | "starting" | "on" | "denied" | "unavailable" | "error";
@@ -23,6 +24,13 @@ export function useHandTracking() {
   const streamRef = useRef<MediaStream | null>(null);
   const loopRef = useRef<number | null>(null);
   const wantPoseRef = useRef(false);
+  const ghostRef = useRef(new HandGhostBuffer());
+  /**
+   * True when the current frame (possibly including ghost hands) has at least
+   * one hand. Polled by CameraPrint for the adaptive filter — no React state
+   * so it never causes a re-render on its own.
+   */
+  const hasHandsRef = useRef(false);
 
   const stopLoop = () => {
     const video = videoRef.current;
@@ -39,6 +47,8 @@ export function useHandTracking() {
     streamRef.current = null;
     if (videoRef.current) videoRef.current.srcObject = null;
     frameRef.current = null;
+    ghostRef.current.reset();
+    hasHandsRef.current = false;
     setStatus("off");
   }, []);
 
@@ -87,7 +97,9 @@ export function useHandTracking() {
       if (video.readyState >= 2 && video.currentTime !== lastVideoTime) {
         lastVideoTime = video.currentTime;
         const now = performance.now();
-        frameRef.current = tracker.detect(video, now);
+        const raw = tracker.detect(video, now);
+        frameRef.current = ghostRef.current.apply(raw);
+        hasHandsRef.current = (frameRef.current?.hands.length ?? 0) > 0;
         fpsRef.current = fpsRef.current * 0.9 + (1000 / Math.max(1, now - last)) * 0.1;
         last = now;
       }
@@ -112,5 +124,5 @@ export function useHandTracking() {
     await trackerRef.current?.enablePose();
   }, []);
 
-  return { videoRef, frameRef, fpsRef, aspectRef, status, start, stop, enablePose };
+  return { videoRef, frameRef, fpsRef, aspectRef, hasHandsRef, status, start, stop, enablePose };
 }

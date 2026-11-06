@@ -29,7 +29,7 @@ export function cameraProblem(status: string, labels: Pick<StageLabels, "denied"
 }
 
 export function HeroStage({ labels }: { labels: StageLabels }) {
-  const { videoRef, frameRef, fpsRef, aspectRef, status, start, stop } = useHandTracking();
+  const { videoRef, frameRef, fpsRef, aspectRef, hasHandsRef, status, start, stop } = useHandTracking();
   const live = status === "on";
   const { sourceRef, handCount } = useFrameSource(frameRef, live);
   const reader = useLetterReader({ frameRef, aspectRef, active: live });
@@ -59,7 +59,7 @@ export function HeroStage({ labels }: { labels: StageLabels }) {
 
   return (
     <figure className="flex h-full min-h-0 flex-col gap-4">
-      <CameraPrint videoRef={videoRef} source={sourceRef} aspect={aspectRef} live={live} className="min-h-0 flex-1">
+      <CameraPrint videoRef={videoRef} source={sourceRef} aspect={aspectRef} hasHandsRef={hasHandsRef} live={live} className="min-h-0 flex-1">
         <div className="label pointer-events-none absolute inset-x-6 top-6 flex justify-between gap-4">
           <span>{labels.figure}</span>
           <span className="text-right">{live ? labels.liveNote : labels.demoNote}</span>

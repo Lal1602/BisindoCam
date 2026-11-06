@@ -16,7 +16,7 @@ type Labels = Dictionary["translate"];
 const SIZES = ["text-[clamp(2rem,1.4rem+2vw,3rem)]", "text-[clamp(2.75rem,1.8rem+3.2vw,4.5rem)]", "text-[clamp(3.5rem,2rem+5vw,6.5rem)]"];
 
 export function Translator({ labels, stage, english = false }: { labels: Labels; stage: StageLabels; english?: boolean }) {
-  const { videoRef, frameRef, aspectRef, status, start, stop, enablePose } = useHandTracking();
+  const { videoRef, frameRef, aspectRef, hasHandsRef, status, start, stop, enablePose } = useHandTracking();
   const live = status === "on";
   const { sourceRef, handCount } = useFrameSource(frameRef, live);
   const [mode, setMode] = useState<"letters" | "words">("letters");
@@ -108,7 +108,7 @@ export function Translator({ labels, stage, english = false }: { labels: Labels;
   return (
     <div className="grid gap-10 lg:grid-cols-12 lg:gap-x-10">
       <figure className="flex flex-col gap-4 lg:col-span-6">
-        <CameraPrint videoRef={videoRef} source={sourceRef} aspect={aspectRef} live={live} className="aspect-[4/5] sm:aspect-[4/3] lg:aspect-[5/6]">
+        <CameraPrint videoRef={videoRef} source={sourceRef} aspect={aspectRef} hasHandsRef={hasHandsRef} live={live} className="aspect-[4/5] sm:aspect-[4/3] lg:aspect-[5/6]">
           <div className="label pointer-events-none absolute inset-x-6 top-6 flex justify-between gap-4">
             <span>{stage.figure}</span>
             <span className="text-right">{live ? stage.liveNote : stage.demoNote}</span>

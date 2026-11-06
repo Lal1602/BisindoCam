@@ -37,7 +37,7 @@ export function Practice({ labels, stage }: { labels: Labels; stage: StageLabels
   const [success, setSuccess] = useState(false);
   const [signs, setSigns] = useState<Sign[]>([]);
 
-  const { videoRef, frameRef, aspectRef, status, start, stop } = useHandTracking();
+  const { videoRef, frameRef, aspectRef, hasHandsRef, status, start, stop } = useHandTracking();
   const live = status === "on";
   const { sourceRef } = useFrameSource(frameRef, live);
   const reader = useLetterReader({ frameRef, aspectRef, active: live });
@@ -204,7 +204,7 @@ export function Practice({ labels, stage }: { labels: Labels; stage: StageLabels
             </figure>
 
             <figure className="grid gap-3">
-              <CameraPrint videoRef={videoRef} source={sourceRef} aspect={aspectRef} live={live} className="aspect-[4/3]">
+              <CameraPrint videoRef={videoRef} source={sourceRef} aspect={aspectRef} hasHandsRef={hasHandsRef} live={live} className="aspect-[4/3]">
                 <span className="label pointer-events-none absolute top-6 left-6">{labels.you}</span>
                 {success && (
                   <span className="font-display pointer-events-none absolute inset-0 grid place-items-center bg-paper/70 text-[clamp(2.5rem,2rem+3vw,5rem)] text-moss italic">

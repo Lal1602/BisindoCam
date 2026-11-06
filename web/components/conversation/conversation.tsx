@@ -25,7 +25,7 @@ export function Conversation({ labels, stage }: { labels: Labels; stage: StageLa
   const [speechLang, setSpeechLang] = useState("id-ID");
   const [faceToFace, setFaceToFace] = useState(false);
 
-  const { videoRef, frameRef, aspectRef, status, start, stop } = useHandTracking();
+  const { videoRef, frameRef, aspectRef, hasHandsRef, status, start, stop } = useHandTracking();
   const live = status === "on";
   const { sourceRef } = useFrameSource(frameRef, live);
   const reader = useLetterReader({ frameRef, aspectRef, active: live });
@@ -80,7 +80,7 @@ export function Conversation({ labels, stage }: { labels: Labels; stage: StageLa
             </h2>
             <p className="text-ink-muted">{labels.signerHint}</p>
           </header>
-          <CameraPrint videoRef={videoRef} source={sourceRef} aspect={aspectRef} live={live} className="aspect-[4/3]" />
+          <CameraPrint videoRef={videoRef} source={sourceRef} aspect={aspectRef} hasHandsRef={hasHandsRef} live={live} className="aspect-[4/3]" />
           <div className="flex flex-wrap items-center gap-3">
             <button type="button" onClick={live ? stop : start} disabled={status === "starting"} className={pill}>
               {status === "starting" ? stage.starting : live ? stage.stopCamera : stage.startCamera}
